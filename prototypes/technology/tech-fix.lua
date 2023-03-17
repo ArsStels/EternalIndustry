@@ -1,0 +1,2 @@
+data.raw.technology["electric-foundry"].prerequisites = {"foundry", "advanced-material-processing-2"}
+ast.newTechCost("electric-foundry", 200, 45, {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}})
