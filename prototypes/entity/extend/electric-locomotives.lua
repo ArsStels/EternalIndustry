@@ -50,8 +50,8 @@ data:extend({
   util.merge({
     data.raw.locomotive.locomotive,
     {
-      name = "ast-electric-locomotive",
-      minable = { result = "ast-electric-locomotive" },
+      name = "ei-electric-locomotive",
+      minable = { result = "ei-electric-locomotive" },
       max_health = 1600,
       weight = 1000, --original is 2000
       max_speed = 1.3,
@@ -62,7 +62,7 @@ data:extend({
       air_resistance = 0.005215, -- this is a percentage of current speed that will be subtracted
       resistances = rolling_stock_resistances(),
       burner = {
-        fuel_category = "accumulator-fuel",
+        fuel_category = "ei-accumulator-fuel",
         effectivity = 1.5,
         fuel_inventory_size = 1,
         burnt_inventory_size = 1,
@@ -75,8 +75,8 @@ data:extend({
   util.merge({
     data.raw.locomotive.locomotive,
     {
-      name = "ast-electric-locomotive-2",
-      minable = { result = "ast-electric-locomotive-2" },
+      name = "ei-electric-locomotive-2",
+      minable = { result = "ei-electric-locomotive-2" },
       max_health = 2200,
       weight = 1600, --original is 2000
       max_speed = 1.7,
@@ -87,7 +87,7 @@ data:extend({
       air_resistance = 0.00365, --0.001, -- this is a percentage of current speed that will be subtracted
       resistances = rolling_stock_resistances(),
       burner = {
-        fuel_category = "accumulator-fuel",
+        fuel_category = "ei-accumulator-fuel",
         effectivity = 2.1,
         fuel_inventory_size = 2,
         burnt_inventory_size = 2,

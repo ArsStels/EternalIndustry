@@ -4,7 +4,7 @@
 --   end
 -- end
 
--- ast.fixRecipes()
+-- ei.fixRecipes()
 --require("prototypes.recipes.fix.recipe-fix")
 --require("prototypes.technology.tech-fix")
-log("AST.data-final-fixes. phase Initialized complete!")
+log("ei.data-final-fixes. phase Initialized complete!")

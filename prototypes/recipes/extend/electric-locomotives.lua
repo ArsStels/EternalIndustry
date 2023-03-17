@@ -16,7 +16,7 @@ ingredients = {
   { "circuit", 5 },
   { "medium-electric-pole", 2 },
 },
-result = "ast-electric-locomotive",
+result = "ei-electric-locomotive",
   },
   {
 type = "recipe",
@@ -29,7 +29,7 @@ enabled = false,
 category = "advanced-crafting",
 energy_required = 20,
 ingredients = {
-  { "ast-electric-locomotive", 1 },
+  { "ei-electric-locomotive", 1 },
   { "electric-engine-unit", 10 },
   { "low-density-structure", 5 },
   { "advanced-circuit", 10 },
@@ -37,6 +37,6 @@ ingredients = {
   { "advanced-circuit", 10 },
   { "advanced-circuit", 10 },
 },
-result = "ast-electric-locomotive-2",
+result = "ei-electric-locomotive-2",
   }
 })

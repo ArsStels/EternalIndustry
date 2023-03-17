@@ -1,6 +1,6 @@
 data:extend({
   {
     type = "recipe-category",
-    name = "accumulator-recharge",
-  }
+    name = "ei-accumulator-recharge",
+  },
 })

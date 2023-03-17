@@ -4,12 +4,12 @@ data:extend({
   util.merge({
     data.raw["assembling-machine"]["assembling-machine-2"],
     {
-      name = "ast-accumulator-recharger",
-      fixed_recipe = "ast-train-accumulator-recharge",
-      recipe_category = {"accumulator-recharge",},
-      minable = { result = "ast-accumulator-recharger" },
+      name = "ei-accumulator-recharger",
+      fixed_recipe = "ei-train-accumulator-recharge",
+      recipe_category = {"ei-accumulator-recharge",},
+      minable = { result = "ei-accumulator-recharger" },
       max_health = 300,
-      next_upgrade = "ast-accumulator-recharger-2",
+      next_upgrade = "ei-accumulator-recharger-2",
       module_specification = {
         module_info_icon_shift = {
           0,
@@ -33,10 +33,10 @@ data:extend({
   util.merge({
     data.raw["assembling-machine"]["assembling-machine-2"],
     {
-      name = "ast-accumulator-recharger-2",
-      fixed_recipe = "ast-train-accumulator-recharge",
-      recipe_category = {"accumulator-recharge",},
-      minable = { result = "ast-accumulator-recharger-2" },
+      name = "ei-accumulator-recharger-2",
+      fixed_recipe = "ei-train-accumulator-recharge",
+      recipe_category = {"ei-accumulator-recharge",},
+      minable = { result = "ei-accumulator-recharger-2" },
       max_health = 800,
       next_upgrade = nil,
       module_specification = {
