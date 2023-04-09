@@ -5,6 +5,7 @@ data:extend(
     name = "debug-mods-settings",
     setting_type = "startup",
     default_value = false,
+
   }
 }
 )

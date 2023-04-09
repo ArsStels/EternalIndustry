@@ -83,7 +83,7 @@ data:extend({
       max_power = "4.8MW",
       reversing_power_modifier = 0.8,
       braking_force = 20,
-      friction_force = 0.21, --0.0005,
+      friction_force = 0.21,    --0.0005,
       air_resistance = 0.00365, --0.001, -- this is a percentage of current speed that will be subtracted
       resistances = rolling_stock_resistances(),
       burner = {

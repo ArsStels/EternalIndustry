@@ -1,54 +1,10 @@
-Version: 0.0.2
-Date: 17.08.2021
+Version: 0.0.1
+Date: 9.04.2023
   Changes:
-    - Fixed two technologies that made the game impossible to pass.
+    - Initial Release.
+    - Added 83 new different ores.
+    - Added MK1 and MK2 electric locomotives.
+    - Added batteries for electric locomotives as a separate fuel type.
+    - Added charging stations for MK1 and MK2 electric locomotives.
+    - Added almost all elements from the Mendeleev table (to be used later).
 -------------------------------------------------------------------
-Version: 0.0.3
-Date: 21.08.2021
-  Changes:
-    - Fixed recipe of slaughterhouse that required unreachable materials.
--------------------------------------------------------------------
-Version: 0.0.4
-Date: 21.08.2021
-  Bugfixes:
-    - The MSP-4 recipe is returned.
--------------------------------------------------------------------
-Version: 0.0.5
-Date: 21.08.2021
-  Changes:
-    - Add full dependencies.
--------------------------------------------------------------------
-Version: 0.1.0
-Date: 02.10.2021
-  Changes:
-    - Some recipes have been moved to technology since the start of the game.
-    - The cost of initial research has been changed.
-  Features:
-    - Add new dependencies.
-    - Add Space Exploration.
-  Bugfixes:
-    - Fixed a startup bug where some "se-recycle-" recipes didn't have icons.
-    - Some of the original technologies that create a deadlock in the study have been changed.
--------------------------------------------------------------------
-Version: 0.1.1
-Date: 07.10.2021
-  Features:
-    - Add README file. Please review it.
-    - Added application of settings. When you start the game, the settings will be unavailable and set to pre-prepared ones. In the future, it is planned to unlock settings that do not greatly affect the game process, but can be configured by the players themselves for their convenience, for example, the refresh rate of buildings from AAI or LTN.
-  Changes:
-    - Dependencies have been changed.
--------------------------------------------------------------------
-Version: 0.1.2
-Date: 07.10.2021
-  Changes:
-    - Fixed list of mod's dependencies. Some mods were left for debugging purposes, so don't pay attention to them.
--------------------------------------------------------------------
-Version: 0.1.3
-Date: 08.10.2021
-  Changes:
-    - Mandatory translation mods have been removed (I forgot to do this earlier)
--------------------------------------------------------------------
-Version: 0.2.0
-Date: 14.01.2023
-  Changes:
-    - No.

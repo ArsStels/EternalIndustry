@@ -1,18 +1,23 @@
 -- require("prototypes.lib")
-require("prototypes.functions") 
--- require("prototypes.entity.fix.locomotives.locomotives")
+require('prototypes.functions')
+require('prototypes.items.extend.solid-substances')
+require('prototypes.fluids.extend.liquid-substances')
 
-require("prototypes.types.new-fuel-category")
-require("prototypes.types.new-recipe-category")
+require('prototypes.types.new-fuel-category')
+require('prototypes.types.new-recipe-category')
 
-require("prototypes.items.extend.train-accumulator")
-require("prototypes.items.extend.electric-locomotives")
-require("prototypes.items.extend.accumulator-recharger")
+require('prototypes.items.extend.train-accumulator')
+require('prototypes.items.extend.electric-locomotives')
+require('prototypes.items.extend.accumulator-recharger')
+require('prototypes.items.extend.iron')
 
-require("prototypes.entity.extend.electric-locomotives")
-require("prototypes.entity.extend.accumulator-recharger")
+require('prototypes.entity.extend.electric-locomotives')
+require('prototypes.entity.extend.accumulator-recharger')
 
-require("prototypes.technology.extend.electric-locomotives")
+require('prototypes.technology.extend.electric-locomotives')
+
+--require('prototypes.resources.test')
+require('prototypes.resources.resources')
 
 -- UPDATE 07.10.2021
 -- local a = 1

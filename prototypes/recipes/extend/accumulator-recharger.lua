@@ -11,8 +11,8 @@ data:extend({
   energy_required = 10,
   ingredients = {
     { "assembling-machine-2", 1 },
-    { "circuit", 5 },
-    { "acsr-cable", 10 },
+    --{ "circuit", 5 },
+    --{ "acsr-cable", 10 },
   },
   result = "ei-accumulator-recharger",
 },
@@ -29,7 +29,7 @@ data:extend({
   ingredients = {
     { "ei-accumulator-recharger", 1 },
     { "advanced-circuit", 10 },
-    { "acsr-cable", 20 },
+    --{ "acsr-cable", 20 },
     { "effectivity-module", 1 },
   },
   result = "ei-accumulator-recharger-2",

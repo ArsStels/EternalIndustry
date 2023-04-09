@@ -9,7 +9,7 @@ category = "advanced-crafting",
 energy_required = 3,
 ingredients = {
   { "accumulator", 1 },
-  { "circuit", 1 },
+  -- { "circuit", 1 },
   { "copper-cable", 2 },
   { "iron-plate", 1 },
 },
