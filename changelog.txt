@@ -8,3 +8,8 @@ Date: 9.04.2023
     - Added charging stations for MK1 and MK2 electric locomotives.
     - Added almost all elements from the Mendeleev table (to be used later).
 -------------------------------------------------------------------
+Version: 0.0.2
+Date: 9.04.2023
+  Changes:
+    - Added some new textures for ores.
+-------------------------------------------------------------------
