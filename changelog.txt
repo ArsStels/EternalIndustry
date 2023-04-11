@@ -1,15 +1,63 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 11.04.2023
+  Minor Features:
+    - Fixed the list of dependencies.
+    - In Changelog, the structure of the change list view is now correct.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 10.04.2023
+  Features:
+    - Removed:
+        • aluminochromite
+        • chromopycotite
+        • coulsonite
+        • psilomelane
+        • manganite
+        • perovskite
+        • sphene
+        • loparite
+        • leucoxene
+        • millerite
+        • pentlandite
+        • ferrimolibdite
+        • powellite
+        • stephanite
+        • uranothorite
+        • kuprite
+        • willemite
+        • helvin
+        • zinnwaldite
+        • dolomite
+        • bismite
+        • shungite
+        • onyx
+        • heversite
+        • anglesite
+  Info:
+    - Now we have 57 ores.
+  Graphics:
+    - Added missing textures for some ores.
+  Changes:
+    - Fenacite replaced to Danalite.
+    - Alluvium replaced to Sylvanite.
+    - Rock salt replaced to Galite.
+    - Potassium salt replaced to Silvin.
+    - Pyrobitum replaced to Bitumen sand.
+    - Corrected an error in the word bismuthite (it was correct: bismuthate).
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 9.04.2023
+  Graphics:
+    - Added some new textures for ores.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 9.04.2023
-  Changes:
+  Major Features:
     - Initial Release.
     - Added 83 new different ores.
     - Added MK1 and MK2 electric locomotives.
     - Added batteries for electric locomotives as a separate fuel type.
     - Added charging stations for MK1 and MK2 electric locomotives.
     - Added almost all elements from the Mendeleev table (to be used later).
--------------------------------------------------------------------
-Version: 0.0.2
-Date: 9.04.2023
-  Changes:
-    - Added some new textures for ores.
--------------------------------------------------------------------
+    - Added technology to explore electric trains.

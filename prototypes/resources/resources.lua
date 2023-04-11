@@ -8,9 +8,7 @@ local resources_table = {
   -- Copper ores:
   ["chalcopyrite"] = { color = co("#ffe800") },
   ["malachite"] = { color = co("#0ad952") },
-  ["kuprite"] = { color = co("#145700") },
   -- Uranium Ores:
-  ["uranothorite"] = { color = co("#b79400") },
   ["carnotite"] = { color = co("#c7b446") },
   ["nasturan"] = { color = co("#463A3A") },
   -- Cobalt ores:
@@ -19,22 +17,16 @@ local resources_table = {
   -- Lead Ores:
   ["galenite"] = {},
   ["cerussite"] = {},
-  ["anglesite"] = {},
   -- Tin ores:
   ["cassiterite"] = {},
   ["stannite"] = {},
   -- Silver Ores:
   ["native_silver"] = {},
   ["prustite"] = {},
-  ["stephanite"] = {},
   -- Molybdenum Ores:
   ["molybdenite"] = {},
-  ["powellite"] = {},
-  ["ferrimolibdite"] = {},
   ["wulfenite"] = {},
-  -- Nickel ores:
-  ["pentlandite"] = {},
-  ["millerite"] = {},
+  -- Nickel ores:=
   ["nickelite"] = {},
   ["garnierite"] = {},
   -- Aluminum ores:
@@ -44,72 +36,54 @@ local resources_table = {
   ["ilmenite"] = {},
   ["rutile"] = {},
   ["anatase"] = {},
-  ["leucoxene"] = {},
-  ["loparite"] = {},
-  ["sphene"] = {},
-  ["perovskite"] = {},
   -- Manganese ores:
   ["pyrolusite"] = {},
-  ["psilomelane"] = {},
-  ["manganite"] = {},
   ["rhodochrosite"] = {},
   -- Vanadium ores:
   ["vanadinite"] = {},
   ["dekloisite"] = {},
-  ["coulsonite"] = {},
   -- Chromites:
   ["chromite"] = {},
-  ["magnochromite"] = { pic = 1 },
-  ["aluminochromite"] = { pic = 1 },
-  ["chromopycotite"] = { pic = 1 },
+  ["magnochromite"] = {},
   -- Zinc ores:
-  ["zincite"] = { pic = 1 },
-  ["sphalerite"] = { pic = 1 },
-  ["willemite"] = { pic = 1 },
+  ["zincite"] = {},
+  ["sphalerite"] = {},
   -- Beryllium ores:
-  ["chrysoberyl"] = { pic = 1 },
-  ["fenacite"] = { pic = 1 },
-  ["helvin"] = { pic = 1 },
+  ["chrysoberyl"] = {},
+  ["danalite"] = {},
   -- Gold-bearing ores:
-  ["alluvium"] = { pic = 1 },
-  ["calaverite"] = { pic = 1 },
-  ["sylvanite"] = { pic = 1 },
-  -- Lithium ores (lake ores] = {pic = 1},:
-  ["vpodumene"] = { pic = 1 },
-  ["petalite"] = { pic = 1 },
-  ["zinnwaldite"] = { pic = 1 },
+  ["calaverite"] = {},
+  ["sylvanite"] = {},
+  -- Lithium ores (lake ores):
+  ["vpodumene"] = {},
+  ["petalite"] = {},
   -- Magnesium ores:
-  ["brusite"] = { pic = 1 },
-  ["magnesite"] = { pic = 1 },
-  ["dolomite"] = { pic = 1 },
+  ["brusite"] = {},
+  ["magnesite"] = {},
   -- Bismuth ores:
-  ["bismuthite"] = { pic = 1 },
-  ["tetradimite"] = { pic = 1 },
-  ["bismite"] = { pic = 1 },
+  ["bismuthate"] = {},
+  ["tetradimite"] = {},
   -- Tungsten ores:
-  ["ferberite"] = { pic = 1 },
-  ["gubnerite"] = { pic = 1 },
+  ["ferberite"] = {},
+  ["gubnerite"] = {},
   -- Carbon-bearing ores:
-  ["graphite"] = { pic = 1 },
-  ["gagate"] = { pic = 1 },
-  ["shungite"] = { pic = 1 },
+  ["graphite"] = {},
+  ["gagate"] = {},
   -- Quartz ores:
-  ["chalcedony"] = { pic = 1 },
-  ["amethyst"] = { pic = 1 },
-  ["onyx"] = { pic = 1 },
+  ["chalcedony"] = {},
+  ["amethyst"] = {},
   -- Platinum Ores:
-  ["native-platinum"] = { pic = 1 },
-  ["sperrylite"] = { pic = 1 },
-  ["heversite"] = { pic = 1 },
+  ["native_platinum"] = {},
+  ["sperrylite"] = {},
   -- Other:
-  ["diamonds"] = { pic = 1 },
-  ["calcite"] = { pic = 1 },
-  ["rock-salt"] = { pic = 1 },
-  ["potassium-salt"] = { pic = 1 },
-  ["peat"] = { pic = 1 },
-  ["pyrobitum"] = { pic = 1 },
-  ["natural-gas"] = { pic = 1 },
-  ["cinnabar"] = { pic = 1 },
+  ["diamonds"] = {},
+  ["calcite"] = {},
+  ["galite"] = {},
+  ["silvin"] = {},
+  ["peat"] = {},
+  ["bitumen_sand"] = {},
+  ["natural_gas"] = {},
+  ["cinnabar"] = {},
   -- ртуть ↗
 }
 
@@ -146,20 +120,6 @@ for name, extra in pairs(resources_table) do
 
   if extra.color == nil then
     extra.color = co("ffffff")
-  end
-
-  local pic_check
-  if extra.pic == 1 then
-    pic_check = "__EternalIndustry__/graphics/resource/limonite.png"
-  else
-    pic_check = "__EternalIndustry__/graphics/resource/" .. name .. ".png"
-  end
-
-  local sheet_check
-  if extra.pic == 1 then
-    sheet_check = "__EternalIndustry__/graphics/resource/shade/limonite.png"
-  else
-    sheet_check = "__EternalIndustry__/graphics/resource/shade/" .. name .. ".png"
   end
 
   if extra.type == nil then
