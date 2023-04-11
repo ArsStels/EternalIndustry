@@ -3,87 +3,87 @@ local co = util.color
 
 local resources_table = {
   -- Iron ores:
-  ["limonite"] = { style = "normal", color = co("#0ad952") },
-  ["goethite"] = { base_density = 120, color = co("#ada14a") },
+  ["limonite"] = { style = "normal", color = co("#0ad952"), order = "a-b-a" },
+  ["goethite"] = { base_density = 120, color = co("#ada14a"), order = "a-b-a" },
   -- Copper ores:
-  ["chalcopyrite"] = { color = co("#ffe800") },
-  ["malachite"] = { color = co("#0ad952") },
+  ["chalcopyrite"] = { color = co("#ffe800"), order = "a-b-b" },
+  ["malachite"] = { color = co("#0ad952"), order = "a-b-b" },
   -- Uranium Ores:
-  ["carnotite"] = { color = co("#c7b446") },
-  ["nasturan"] = { color = co("#463A3A") },
+  ["carnotite"] = { color = co("#c7b446"), order = "a-b" },
+  ["nasturan"] = { color = co("#463A3A"), order = "a-b" },
   -- Cobalt ores:
-  ["cobaltite"] = { color = co("#B0C4DE") },
-  ["safflorite"] = {color = co("#a0a0a0")},
+  ["cobaltite"] = { color = co("#B0C4DE"), order = "a-b-j" },
+  ["safflorite"] = { color = co("#a0a0a0"), order = "a-b-j" },
   -- Lead Ores:
-  ["galenite"] = {color = co("#505054")},
-  ["cerussite"] = {color = co("#744c2c")},
+  ["galenite"] = { color = co("#505054"), order = "a-b-c" },
+  ["cerussite"] = { color = co("#744c2c"), order = "a-b-c" },
   -- Tin ores:
-  ["cassiterite"] = {color = co("#d0c8a4")},
-  ["stannite"] = {color = co("#343838")},
+  ["cassiterite"] = { color = co("#d0c8a4"), order = "a-b-d" },
+  ["stannite"] = { color = co("#343838") , order = "a-b-d"},
   -- Silver Ores:
-  ["native_silver"] = {color = co("#a8a098")},
-  ["proustite"] = {color = co("#540008")},
+  ["native_silver"] = { color = co("#a8a098") , order = "a-b-i"},
+  ["proustite"] = { color = co("#540008"), order = "a-b-i" },
   -- Molybdenum Ores:
-  ["molybdenite"] = {color = co("#9090a0")},
-  ["wulfenite"] = {color = co("#b83814")},
+  ["molybdenite"] = { color = co("#9090a0"), order = "a-b-h" },
+  ["wulfenite"] = { color = co("#b83814"), order = "a-b-h" },
   -- Nickel ores:=
-  ["nickelite"] = {color = co("#302820")},
-  ["garnierite"] = {color = co("#24583c")},
+  ["nickelite"] = { color = co("#302820"), order = "a-b-g" },
+  ["garnierite"] = { color = co("#24583c"), order = "a-b-g" },
   -- Aluminum ores:
-  ["bauxite"] = {color = co("#e4b87c")},
-  ["nepheline_syenites"] = {color = co("#f0ece0")},
+  ["bauxite"] = { color = co("#e4b87c"), order = "a-b-e" },
+  ["nepheline_syenites"] = { color = co("#f0ece0"), order = "a-b-e" },
   -- Titanium ores:
-  ["ilmenite"] = {color = co("#383834")},
-  ["rutile"] = {color = co("#642c00")},
-  ["anatase"] = {color = co("#606058")},
+  ["ilmenite"] = { color = co("#383834"), order = "a-b-f" },
+  ["rutile"] = { color = co("#642c00"), order = "a-b-f" },
+  ["anatase"] = { color = co("#606058"), order = "a-b-f" },
   -- Manganese ores:
-  ["pyrolusite"] = {color = co("#64685c")},
-  ["rhodochrosite"] = {color = co("#a81010")},
+  ["pyrolusite"] = { color = co("#64685c"), order = "a-b-k" },
+  ["rhodochrosite"] = { color = co("#a81010"), order = "a-b-k" },
   -- Vanadium ores:
-  ["vanadinite"] = {color = co("#4c1c24")},
-  ["dekloisite"] = {color = co("#e46818")},
+  ["vanadinite"] = { color = co("#4c1c24"), order = "a-b-l" },
+  ["dekloisite"] = { color = co("#e46818"), order = "a-b-l" },
   -- Chromites:
-  ["chromite"] = {color = co("#686468")},
-  ["magnochromite"] = {color = co("#50504c")},
+  ["chromite"] = { color = co("#686468"), order = "a-b-m" },
+  ["magnochromite"] = { color = co("#50504c"), order = "a-b-m" },
   -- Zinc ores:
-  ["zincite"] = {color = co("#740000")},
-  ["sphalerite"] = {color = co("#5c3014")},
+  ["zincite"] = { color = co("#740000"), order = "a-b-n" },
+  ["sphalerite"] = { color = co("#5c3014"), order = "a-b-n" },
   -- Beryllium ores:
-  ["chrysoberyl"] = {color = co("#94986c")},
-  ["danalite"] = {color = co("#7c8080")},
+  ["chrysoberyl"] = { color = co("#94986c"), order = "a-b-o" },
+  ["danalite"] = { color = co("#7c8080"), order = "a-b-o" },
   -- Gold-bearing ores:
-  ["calaverite"] = {color = co("#a7a0a1")},
-  ["sylvanite"] = {color = co("#5a5a54")},
+  ["calaverite"] = { color = co("#a7a0a1"), order = "a-b-p" },
+  ["sylvanite"] = { color = co("#5a5a54"), order = "a-b-p" },
   -- Lithium ores (lake ores):
-  ["vpodumene"] = {color = co("#907080")},
-  ["petalite"] = {color = co("#707060")},
+  ["vpodumene"] = { color = co("#907080"), order = "a-b-q" },
+  ["petalite"] = { color = co("#707060"), order = "a-b-q" },
   -- Magnesium ores:
-  ["brusite"] = {color = co("#609090")},
-  ["magnesite"] = {color = co("#d0d0c0")},
+  ["brusite"] = { color = co("#609090"), order = "a-b-r" },
+  ["magnesite"] = { color = co("#d0d0c0"), order = "a-b-r" },
   -- Bismuth ores:
-  ["bismuthate"] = {color = co("#a0a090")},
-  ["tetradimite"] = {color = co("#9090a0")},
+  ["bismuthate"] = { color = co("#a0a090"), order = "a-b-s" },
+  ["tetradimite"] = { color = co("#9090a0"), order = "a-b-s" },
   -- Tungsten ores:
-  ["ferberite"] = {color = co("#a09060")},
-  ["gubnerite"] = {color = co("#c0c0b0")},
+  ["ferberite"] = { color = co("#a09060"), order = "a-b-t" },
+  ["gubnerite"] = { color = co("#c0c0b0"), order = "a-b-t" },
   -- Carbon-bearing ores:
-  ["graphite"] = {color = co("#505050")},
-  ["gagate"] = {color = co("#202020")},
+  ["graphite"] = { color = co("#505050"), order = "a-b-u" },
+  ["gagate"] = { color = co("#202020"), order = "a-b-u" },
   -- Quartz ores:
-  ["chalcedony"] = {color = co("#8090c0")},
-  ["amethyst"] = {color = co("#502050")},
+  ["chalcedony"] = { color = co("#8090c0"), order = "a-b-v" },
+  ["amethyst"] = { color = co("#502050"), order = "a-b-v" },
   -- Platinum Ores:
-  ["native_platinum"] = {color = co("#a09080")},
-  ["sperrylite"] = {color = co("#504010")},
+  ["native_platinum"] = { color = co("#a09080"), order = "a-b-w" },
+  ["sperrylite"] = { color = co("#504010"), order = "a-b-w" },
   -- Other:
-  ["diamonds"] = {color = co("#c0b0a0 ")},
-  ["calcite"] = {color = co("#e0b090")},
-  ["halite"] = {color = co("#908070")},
-  ["silvin"] = {color = co("#c06040")},
-  ["peat"] = {color = co("#605040")},
-  ["bitumen_sand"] = {color = co("#303020 ")},
-  ["natural_gas"] = {color = co("#ffa010")},
-  ["cinnabar"] = { color = co("#804040")},
+  ["diamonds"] = { color = co("#c0b0a0 "), order = "a-b-x" },
+  ["calcite"] = { color = co("#e0b090"), order = "a-b-x" },
+  ["halite"] = { color = co("#908070"), order = "a-b-z" },
+  ["silvin"] = { color = co("#c06040"), order = "a-b-z" },
+  ["peat"] = { color = co("#605040"), order = "a-b-x" },
+  ["bitumen_sand"] = { color = co("#303020 "), order = "a-b-x" },
+  ["natural_gas"] = { color = co("#ffa010"), order = "a-b-x" },
+  ["cinnabar"] = { color = co("#804040"), order = "a-b-x" },
   -- ртуть ↗
 }
 
@@ -134,6 +134,9 @@ for name, extra in pairs(resources_table) do
   end
   if extra.variation_count == nil then
     extra.variation_count = 1
+  end
+  if extra.order == nil then
+    extra.order = "a-b-a"
   end
   if extra.style == "scattered" then
     arg = {
@@ -220,9 +223,10 @@ for name, extra in pairs(resources_table) do
   {
     type = "autoplace-control",
     name = name,
+    localised_name = { "", "[entity=" .. name .. "] ", { "entity-name." .. name } },
     richness = true,
     category = "resource",
-    order = "b-a"
+    order = extra.order
   }
 
   local item =
@@ -269,7 +273,7 @@ for name, extra in pairs(resources_table) do
       icon = "__EternalIndustry__/graphics/resource/" .. name .. ".png",
       icon_size = 128,
       flags = { "placeable-neutral" },
-      order = "a-b-a",
+      order = extra.order,
       infinite = false,
       map_color = extra.color,
       minable = {
