@@ -1,6 +1,6 @@
 {
     "name": "EternalIndustry",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "title": "Eternal Industry",
     "author": "ArsStels",
     "contact": "ArsStels#6300",
@@ -11,14 +11,14 @@
         "base >= 1.1.80",
         "? pyalienlife",
         "? pyalternativeenergy",
-        "pycoalprocessing",
+        "? pycoalprocessing",
         "? pyfusionenergy",
         "? pyhightech",
         "? pyindustry",
         "? pypetroleumhandling",
         "? pypostprocessing",
         "? pyrawores",
-        "stdlib"
+        "? stdlib"
     ],
     "description": "Production chains built on real basis. Can you finish it completely?"
 }

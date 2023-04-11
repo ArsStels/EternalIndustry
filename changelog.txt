@@ -1,4 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.6
+Date: 11.04.2023
+  Changes:
+    - Corrected errors in the names of images to the ores.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+Date: 11.04.2023
+  Minor Features:
+    - Added missing colors to highlight the ore on the map.
+    - Disabled wiki loading in the control phase.
+      (this required PyCoalProcessing, which currently only interferes with the launch of the game).
+  Changes:
+    - Corrected an error in the word prustite (it was correct: proustite).
+  Locale:
+    - Added translation to the ores:
+        • English
+        • Russian
+---------------------------------------------------------------------------------------------------
 Version: 0.0.4
 Date: 11.04.2023
   Minor Features:

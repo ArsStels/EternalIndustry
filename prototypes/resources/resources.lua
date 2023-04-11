@@ -15,75 +15,75 @@ local resources_table = {
   ["cobaltite"] = { color = co("#B0C4DE") },
   ["safflorite"] = {color = co("#a0a0a0")},
   -- Lead Ores:
-  ["galenite"] = {},
-  ["cerussite"] = {},
+  ["galenite"] = {color = co("#505054")},
+  ["cerussite"] = {color = co("#744c2c")},
   -- Tin ores:
-  ["cassiterite"] = {},
-  ["stannite"] = {},
+  ["cassiterite"] = {color = co("#d0c8a4")},
+  ["stannite"] = {color = co("#343838")},
   -- Silver Ores:
-  ["native_silver"] = {},
-  ["prustite"] = {},
+  ["native_silver"] = {color = co("#a8a098")},
+  ["proustite"] = {color = co("#540008")},
   -- Molybdenum Ores:
-  ["molybdenite"] = {},
-  ["wulfenite"] = {},
+  ["molybdenite"] = {color = co("#9090a0")},
+  ["wulfenite"] = {color = co("#b83814")},
   -- Nickel ores:=
-  ["nickelite"] = {},
-  ["garnierite"] = {},
+  ["nickelite"] = {color = co("#302820")},
+  ["garnierite"] = {color = co("#24583c")},
   -- Aluminum ores:
-  ["bauxite"] = {},
-  ["nepheline_syenites"] = {},
+  ["bauxite"] = {color = co("#e4b87c")},
+  ["nepheline_syenites"] = {color = co("#f0ece0")},
   -- Titanium ores:
-  ["ilmenite"] = {},
-  ["rutile"] = {},
-  ["anatase"] = {},
+  ["ilmenite"] = {color = co("#383834")},
+  ["rutile"] = {color = co("#642c00")},
+  ["anatase"] = {color = co("#606058")},
   -- Manganese ores:
-  ["pyrolusite"] = {},
-  ["rhodochrosite"] = {},
+  ["pyrolusite"] = {color = co("#64685c")},
+  ["rhodochrosite"] = {color = co("#a81010")},
   -- Vanadium ores:
-  ["vanadinite"] = {},
-  ["dekloisite"] = {},
+  ["vanadinite"] = {color = co("#4c1c24")},
+  ["dekloisite"] = {color = co("#e46818")},
   -- Chromites:
-  ["chromite"] = {},
-  ["magnochromite"] = {},
+  ["chromite"] = {color = co("#686468")},
+  ["magnochromite"] = {color = co("#50504c")},
   -- Zinc ores:
-  ["zincite"] = {},
-  ["sphalerite"] = {},
+  ["zincite"] = {color = co("#740000")},
+  ["sphalerite"] = {color = co("#5c3014")},
   -- Beryllium ores:
-  ["chrysoberyl"] = {},
-  ["danalite"] = {},
+  ["chrysoberyl"] = {color = co("#94986c")},
+  ["danalite"] = {color = co("#7c8080")},
   -- Gold-bearing ores:
-  ["calaverite"] = {},
-  ["sylvanite"] = {},
+  ["calaverite"] = {color = co("#a7a0a1")},
+  ["sylvanite"] = {color = co("#5a5a54")},
   -- Lithium ores (lake ores):
-  ["vpodumene"] = {},
-  ["petalite"] = {},
+  ["vpodumene"] = {color = co("#907080")},
+  ["petalite"] = {color = co("#707060")},
   -- Magnesium ores:
-  ["brusite"] = {},
-  ["magnesite"] = {},
+  ["brusite"] = {color = co("#609090")},
+  ["magnesite"] = {color = co("#d0d0c0")},
   -- Bismuth ores:
-  ["bismuthate"] = {},
-  ["tetradimite"] = {},
+  ["bismuthate"] = {color = co("#a0a090")},
+  ["tetradimite"] = {color = co("#9090a0")},
   -- Tungsten ores:
-  ["ferberite"] = {},
-  ["gubnerite"] = {},
+  ["ferberite"] = {color = co("#a09060")},
+  ["gubnerite"] = {color = co("#c0c0b0")},
   -- Carbon-bearing ores:
-  ["graphite"] = {},
-  ["gagate"] = {},
+  ["graphite"] = {color = co("#505050")},
+  ["gagate"] = {color = co("#202020")},
   -- Quartz ores:
-  ["chalcedony"] = {},
-  ["amethyst"] = {},
+  ["chalcedony"] = {color = co("#8090c0")},
+  ["amethyst"] = {color = co("#502050")},
   -- Platinum Ores:
-  ["native_platinum"] = {},
-  ["sperrylite"] = {},
+  ["native_platinum"] = {color = co("#a09080")},
+  ["sperrylite"] = {color = co("#504010")},
   -- Other:
-  ["diamonds"] = {},
-  ["calcite"] = {},
-  ["galite"] = {},
-  ["silvin"] = {},
-  ["peat"] = {},
-  ["bitumen_sand"] = {},
-  ["natural_gas"] = {},
-  ["cinnabar"] = {},
+  ["diamonds"] = {color = co("#c0b0a0 ")},
+  ["calcite"] = {color = co("#e0b090")},
+  ["halite"] = {color = co("#908070")},
+  ["silvin"] = {color = co("#c06040")},
+  ["peat"] = {color = co("#605040")},
+  ["bitumen_sand"] = {color = co("#303020 ")},
+  ["natural_gas"] = {color = co("#ffa010")},
+  ["cinnabar"] = { color = co("#804040")},
   -- ртуть ↗
 }
 
@@ -117,31 +117,24 @@ for name, extra in pairs(resources_table) do
   if extra.style == nil then
     extra.style = "scattered"
   end
-
   if extra.color == nil then
     extra.color = co("ffffff")
   end
-
   if extra.type == nil then
     extra.type = "solid"
   end
-
   if extra.base_density == nil then
     extra.base_density = 100
   end
-
   if extra.richness_scale == nil then
     extra.richness_scale = 1
   end
-
   if extra.frame_count == nil then
     extra.frame_count = 1
   end
-
   if extra.variation_count == nil then
     extra.variation_count = 1
   end
-
   if extra.style == "scattered" then
     arg = {
       name = name,
@@ -236,7 +229,7 @@ for name, extra in pairs(resources_table) do
   {
     type = "item",
     name = name,
-    icon = pic_check,
+    icon = "__EternalIndustry__/graphics/resource/" .. name .. ".png",
     icon_size = 128,
     stack_size = 200
   }
@@ -245,7 +238,7 @@ for name, extra in pairs(resources_table) do
   if extra.frame_count == 1 and extra.variation_count == 1 then
     anim =
     {
-      filename = sheet_check,
+      filename = "__EternalIndustry__/graphics/resource/shade/" .. name .. ".png",
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -257,7 +250,7 @@ for name, extra in pairs(resources_table) do
     anim =
     {
       sheet = {
-        filename = sheet_check,
+        filename = "__EternalIndustry__/graphics/resource/shade/" .. name .. ".png",
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -273,7 +266,7 @@ for name, extra in pairs(resources_table) do
     {
       type = "resource",
       name = name,
-      icon = pic_check,
+      icon = "__EternalIndustry__/graphics/resource/" .. name .. ".png",
       icon_size = 128,
       flags = { "placeable-neutral" },
       order = "a-b-a",

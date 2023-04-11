@@ -1,1 +1,1 @@
-require('scripts.wiki.text-pages')
+-- require('scripts.wiki.text-pages')
