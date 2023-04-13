@@ -1,102 +1,113 @@
-local function CNSE(name, icon, stack_size) -- Create new elements
-  data:extend({
+local solid_substances = {
+["ei-Li"]={},
+["ei-Be"]={},
+["ei-B"]={},
+["ei-C"]={},
+["ei-Na"]={},
+["ei-Mg"]={},
+["ei-Al"]={},
+["ei-Si"]={},
+["ei-P"]={},
+["ei-S"]={},
+["ei-K"]={},
+["ei-Ca"]={},
+["ei-Sc"]={},
+["ei-Ti"]={},
+["ei-V"]={},
+["ei-Cr"]={},
+["ei-Mn"]={},
+["ei-Fe"]={},
+["ei-Co"]={},
+["ei-Ni"]={},
+["ei-Cu"]={},
+["ei-Zn"]={},
+["ei-Ga"]={},
+["ei-Ge"]={},
+["ei-As"]={},
+["ei-Se"]={},
+["ei-Rb"]={},
+["ei-Sr"]={},
+["ei-Y"]={},
+["ei-Zr"]={},
+["ei-Nb"]={},
+["ei-Mo"]={},
+["ei-Tc"]={},
+["ei-Ru"]={},
+["ei-Rh"]={},
+["ei-Pd"]={},
+["ei-Ag"]={},
+["ei-Cd"]={},
+["ei-In"]={},
+["ei-Sn"]={},
+["ei-Sb"]={},
+["ei-Te"]={},
+["ei-I"]={},
+["ei-Cs"]={},
+["ei-Ba"]={},
+["ei-La"]={},
+["ei-Ce"]={},
+["ei-Pr"]={},
+["ei-Nd"]={},
+["ei-Pm"]={},
+["ei-Sm"]={},
+["ei-Eu"]={},
+["ei-Gd"]={},
+["ei-Tb"]={},
+["ei-Dy"]={},
+["ei-Ho"]={},
+["ei-Er"]={},
+["ei-Tm"]={},
+["ei-Yb"]={},
+["ei-Lu"]={},
+["ei-Hf"]={},
+["ei-Ta"]={},
+["ei-W"]={},
+["ei-Re"]={},
+["ei-Os"]={},
+["ei-Ir"]={},
+["ei-Pt"]={},
+["ei-Au"]={},
+["ei-Pb"]={},
+["ei-Bi"]={},
+["ei-Po"]={},
+["ei-At"]={},
+["ei-Fr"]={},
+["ei-Ra"]={},
+["ei-Ac"]={},
+["ei-Th"]={},
+["ei-Pa"]={},
+["ei-U"]={},
+["ei-Np"]={},
+["ei-Pu"]={},
+["ei-Am"]={},
+["ei-Cm"]={},
+["ei-Bk"]={},
+["ei-Cf"]={},
+["ei-Es"]={},
+["ei-Fm"]={},
+["ei-Md"]={},
+["ei-No"]={},
+["ei-Lr"]={}
+}
+
+for name, extra in pairs(solid_substances) do
+  if extra.icon == nil then
+    extra.icon = "__EternalIndustry__/graphics/items/raw-iron.png"
+  end
+  if extra.is == nil then
+    extra.is = 128
+  end
+  if extra.sz == nil then
+    extra.sz = 100
+  end
+  local item
+  item =
     {
       type = "item",
       name = name,
-      icon = icon,
-      icon_size = 128,
-      stack_size = stack_size
+      icon = extra.icon,
+      icon_size = extra.is,
+      stack_size = extra.sz
     }
-  })
+  data:extend({item})
 end
-
-CNSE("ei-Li", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Be", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-B", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-C", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Na", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Mg", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Al", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Si", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-P", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-S", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-K", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ca", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Sc", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ti", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-V", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Cr", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Mn", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Fe", "__EternalIndustry__/graphics/items/raw-iron.png", 200)
-CNSE("ei-Co", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ni", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Cu", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Zn", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ga", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ge", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-As", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Se", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Rb", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Sr", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Y", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Zr", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Nb", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Mo", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Tc", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ru", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Rh", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pd", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ag", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Cd", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-In", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Sn", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Sb", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Te", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-I", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Cs", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ba", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-La", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ce", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pr", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Nd", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pm", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Sm", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Eu", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Gd", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Tb", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Dy", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ho", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Er", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Tm", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Yb", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Lu", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Hf", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ta", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-W", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Re", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Os", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ir", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pt", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Au", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ti", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pb", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Bi", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Po", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-At", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Fr", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ra", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Ac", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Th", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pa", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-U", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Np", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Pu", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Am", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Cm", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Bk", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Cf", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Es", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Fm", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Md", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-No", "__EternalIndustry__/graphics/items/iron-plate.png", 200)
-CNSE("ei-Lr", "__EternalIndustry__/graphics/items/iron-plate.png", 200)

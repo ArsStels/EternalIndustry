@@ -18,6 +18,7 @@ require('prototypes.technology.extend.electric-locomotives')
 
 --require('prototypes.resources.test')
 require('prototypes.resources.resources')
+require('prototypes.items.extend.raw-resources')
 
 -- UPDATE 07.10.2021
 -- local a = 1

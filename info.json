@@ -1,6 +1,6 @@
 {
     "name": "EternalIndustry",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "title": "Eternal Industry",
     "author": "ArsStels",
     "contact": "ArsStels#6300",
@@ -8,17 +8,18 @@
     "homepage": "https://discord.gg/Aq5DRaN6yP",
     "factorio_version": "1.1",
     "dependencies": [
-        "base >= 1.1.80",
-        "? pyalienlife",
-        "? pyalternativeenergy",
+        "base >= 1.1.78",
+        "? ModpackHelper",
+        "? stdlib",
         "? pycoalprocessing",
-        "? pyfusionenergy",
+        "? pyrawores",
         "? pyhightech",
         "? pyindustry",
         "? pypetroleumhandling",
+        "? pyalternativeenergy",
+        "? pyfusionenergy",
         "? pypostprocessing",
-        "? pyrawores",
-        "? stdlib"
+        "? pyalienlife"
     ],
-    "description": "Production chains built on real basis. Can you finish it completely?"
+    "description": "[color=#ff0000][font=default-large-bold]PRE-ALPHA!!![/font][/color]\nProduction chains built on real basis. Can you finish it completely?"
 }

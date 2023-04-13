@@ -3,88 +3,88 @@ local co = util.color
 
 local resources_table = {
   -- Iron ores:
-  ["limonite"] = { style = "normal", color = co("#0ad952"), order = "a-b-a" },
-  ["goethite"] = { base_density = 120, color = co("#ada14a"), order = "a-b-a" },
+  ["limonite"] = { style = "normal", color = co("#0ad952"), order = "a-b-a", sheet = "iron" },
+  ["goethite"] = { base_density = 120, color = co("#ada14a"), order = "a-b-a", sheet = "iron" },
   -- Copper ores:
-  ["chalcopyrite"] = { color = co("#ffe800"), order = "a-b-b" },
-  ["malachite"] = { color = co("#0ad952"), order = "a-b-b" },
+  ["chalcopyrite"] = { color = co("#ffe800"), order = "a-b-b", sheet = "copper" },
+  ["malachite"] = { color = co("#0ad952"), order = "a-b-b", sheet = "copper" },
   -- Uranium Ores:
-  ["carnotite"] = { color = co("#c7b446"), order = "a-b" },
-  ["nasturan"] = { color = co("#463A3A"), order = "a-b" },
+  ["carnotite"] = { color = co("#c7b446"), order = "a-b", sheet = "stone" },
+  ["nasturan"] = { color = co("#463A3A"), order = "a-b", sheet = "stone" },
   -- Cobalt ores:
-  ["cobaltite"] = { color = co("#B0C4DE"), order = "a-b-j" },
-  ["safflorite"] = { color = co("#a0a0a0"), order = "a-b-j" },
+  ["cobaltite"] = { color = co("#B0C4DE"), order = "a-b-j", sheet = "coal" },
+  ["safflorite"] = { color = co("#a0a0a0"), order = "a-b-j", sheet = "coal" },
   -- Lead Ores:
-  ["galenite"] = { color = co("#505054"), order = "a-b-c" },
-  ["cerussite"] = { color = co("#744c2c"), order = "a-b-c" },
+  ["galenite"] = { color = co("#505054"), order = "a-b-c", sheet = "iron" },
+  ["cerussite"] = { color = co("#744c2c"), order = "a-b-c", sheet = "iron" },
   -- Tin ores:
-  ["cassiterite"] = { color = co("#d0c8a4"), order = "a-b-d" },
-  ["stannite"] = { color = co("#343838") , order = "a-b-d"},
+  ["cassiterite"] = { color = co("#d0c8a4"), order = "a-b-d", sheet = "copper" },
+  ["stannite"] = { color = co("#343838"), order = "a-b-d", sheet = "copper" },
   -- Silver Ores:
-  ["native_silver"] = { color = co("#a8a098") , order = "a-b-i"},
-  ["proustite"] = { color = co("#540008"), order = "a-b-i" },
+  ["native_silver"] = { color = co("#a8a098"), order = "a-b-i" },
+  ["proustite"] = { color = co("#540008"), order = "a-b-i", sheet = "iron" },
   -- Molybdenum Ores:
   ["molybdenite"] = { color = co("#9090a0"), order = "a-b-h" },
-  ["wulfenite"] = { color = co("#b83814"), order = "a-b-h" },
+  ["wulfenite"] = { color = co("#b83814"), order = "a-b-h", sheet = "coal" },
   -- Nickel ores:=
-  ["nickelite"] = { color = co("#302820"), order = "a-b-g" },
-  ["garnierite"] = { color = co("#24583c"), order = "a-b-g" },
+  ["nickelite"] = { color = co("#302820"), order = "a-b-g", sheet = "coal" },
+  ["garnierite"] = { color = co("#24583c"), order = "a-b-g", sheet = "iron" },
   -- Aluminum ores:
-  ["bauxite"] = { color = co("#e4b87c"), order = "a-b-e" },
+  ["bauxite"] = { color = co("#e4b87c"), order = "a-b-e", sheet = "iron" },
   ["nepheline_syenites"] = { color = co("#f0ece0"), order = "a-b-e" },
   -- Titanium ores:
-  ["ilmenite"] = { color = co("#383834"), order = "a-b-f" },
-  ["rutile"] = { color = co("#642c00"), order = "a-b-f" },
-  ["anatase"] = { color = co("#606058"), order = "a-b-f" },
+  ["ilmenite"] = { color = co("#383834"), order = "a-b-f", sheet = "iron" },
+  ["rutile"] = { color = co("#642c00"), order = "a-b-f", sheet = "stone" },
+  ["anatase"] = { color = co("#606058"), order = "a-b-f", sheet = "stone" },
   -- Manganese ores:
-  ["pyrolusite"] = { color = co("#64685c"), order = "a-b-k" },
-  ["rhodochrosite"] = { color = co("#a81010"), order = "a-b-k" },
+  ["pyrolusite"] = { color = co("#64685c"), order = "a-b-k", sheet = "iron" },
+  ["rhodochrosite"] = { color = co("#a81010"), order = "a-b-k", sheet = "iron" },
   -- Vanadium ores:
-  ["vanadinite"] = { color = co("#4c1c24"), order = "a-b-l" },
-  ["dekloisite"] = { color = co("#e46818"), order = "a-b-l" },
+  ["vanadinite"] = { color = co("#4c1c24"), order = "a-b-l", sheet = "copper" },
+  ["dekloisite"] = { color = co("#e46818"), order = "a-b-l", sheet = "copper" },
   -- Chromites:
-  ["chromite"] = { color = co("#686468"), order = "a-b-m" },
-  ["magnochromite"] = { color = co("#50504c"), order = "a-b-m" },
+  ["chromite"] = { color = co("#686468"), order = "a-b-m", sheet = "iron" },
+  ["magnochromite"] = { color = co("#50504c"), order = "a-b-m", sheet = "iron" },
   -- Zinc ores:
-  ["zincite"] = { color = co("#740000"), order = "a-b-n" },
-  ["sphalerite"] = { color = co("#5c3014"), order = "a-b-n" },
+  ["zincite"] = { color = co("#740000"), order = "a-b-n", sheet = "copper" },
+  ["sphalerite"] = { color = co("#5c3014"), order = "a-b-n", sheet = "copper" },
   -- Beryllium ores:
-  ["chrysoberyl"] = { color = co("#94986c"), order = "a-b-o" },
-  ["danalite"] = { color = co("#7c8080"), order = "a-b-o" },
+  ["chrysoberyl"] = { color = co("#94986c"), order = "a-b-o", sheet = "iron" },
+  ["danalite"] = { color = co("#7c8080"), order = "a-b-o", sheet = "stone" },
   -- Gold-bearing ores:
-  ["calaverite"] = { color = co("#a7a0a1"), order = "a-b-p" },
-  ["sylvanite"] = { color = co("#5a5a54"), order = "a-b-p" },
+  ["calaverite"] = { color = co("#a7a0a1"), order = "a-b-p", sheet = "iron" },
+  ["sylvanite"] = { color = co("#5a5a54"), order = "a-b-p", sheet = "iron" },
   -- Lithium ores (lake ores):
-  ["vpodumene"] = { color = co("#907080"), order = "a-b-q" },
-  ["petalite"] = { color = co("#707060"), order = "a-b-q" },
+  ["vpodumene"] = { color = co("#907080"), order = "a-b-q", sheet = "coal" },
+  ["petalite"] = { color = co("#707060"), order = "a-b-q", sheet = "coal" },
   -- Magnesium ores:
-  ["brusite"] = { color = co("#609090"), order = "a-b-r" },
-  ["magnesite"] = { color = co("#d0d0c0"), order = "a-b-r" },
+  ["brusite"] = { color = co("#609090"), order = "a-b-r", sheet = "copper" },
+  ["magnesite"] = { color = co("#d0d0c0"), order = "a-b-r", sheet = "copper" },
   -- Bismuth ores:
-  ["bismuthate"] = { color = co("#a0a090"), order = "a-b-s" },
-  ["tetradimite"] = { color = co("#9090a0"), order = "a-b-s" },
+  ["bismuthate"] = { color = co("#a0a090"), order = "a-b-s", sheet = "iron" },
+  ["tetradimite"] = { color = co("#9090a0"), order = "a-b-s", sheet = "iron" },
   -- Tungsten ores:
   ["ferberite"] = { color = co("#a09060"), order = "a-b-t" },
-  ["gubnerite"] = { color = co("#c0c0b0"), order = "a-b-t" },
+  ["gubnerite"] = { color = co("#c0c0b0"), order = "a-b-t", sheet = "iron" },
   -- Carbon-bearing ores:
-  ["graphite"] = { color = co("#505050"), order = "a-b-u" },
-  ["gagate"] = { color = co("#202020"), order = "a-b-u" },
+  ["graphite"] = { color = co("#505050"), order = "a-b-u", sheet = "iron" },
+  ["gagate"] = { color = co("#202020"), order = "a-b-u", sheet = "iron" },
+  ["diamonds"] = { color = co("#c0b0a0 "), order = "a-b-x", sheet = "iron" },
   -- Quartz ores:
-  ["chalcedony"] = { color = co("#8090c0"), order = "a-b-v" },
-  ["amethyst"] = { color = co("#502050"), order = "a-b-v" },
+  ["chalcedony"] = { color = co("#8090c0"), order = "a-b-v", sheet = "iron" },
+  ["amethyst"] = { color = co("#502050"), order = "a-b-v", sheet = "iron" },
   -- Platinum Ores:
   ["native_platinum"] = { color = co("#a09080"), order = "a-b-w" },
-  ["sperrylite"] = { color = co("#504010"), order = "a-b-w" },
+  ["sperrylite"] = { color = co("#504010"), order = "a-b-w", sheet = "iron" },
+  -- Salt ores:
+  ["halite"] = { color = co("#908070"), order = "a-b-z", sheet = "iron" },
+  ["silvin"] = { color = co("#c06040"), order = "a-b-z", sheet = "iron" },
   -- Other:
-  ["diamonds"] = { color = co("#c0b0a0 "), order = "a-b-x" },
-  ["calcite"] = { color = co("#e0b090"), order = "a-b-x" },
-  ["halite"] = { color = co("#908070"), order = "a-b-z" },
-  ["silvin"] = { color = co("#c06040"), order = "a-b-z" },
-  ["peat"] = { color = co("#605040"), order = "a-b-x" },
+  ["calcite"] = { color = co("#e0b090"), order = "a-b-x", sheet = "iron" },
+  ["peat"] = { color = co("#605040"), order = "a-b-x", sheet = "iron" },
   ["bitumen_sand"] = { color = co("#303020 "), order = "a-b-x" },
   ["natural_gas"] = { color = co("#ffa010"), order = "a-b-x" },
-  ["cinnabar"] = { color = co("#804040"), order = "a-b-x" },
-  -- ртуть ↗
+  ["cinnabar"] = { color = co("#804040"), order = "a-b-x", sheet = "iron" },
 }
 
 --[[
@@ -112,13 +112,14 @@ local resource_autoplace = require("resource-autoplace")
 local ras = resource_autoplace.resource_autoplace_settings
 local arg
 local resource_add
+local particle_params
 
 for name, extra in pairs(resources_table) do
   if extra.style == nil then
     extra.style = "scattered"
   end
   if extra.color == nil then
-    extra.color = co("ffffff")
+    extra.color = co("#ffffff")
   end
   if extra.type == nil then
     extra.type = "solid"
@@ -129,11 +130,11 @@ for name, extra in pairs(resources_table) do
   if extra.richness_scale == nil then
     extra.richness_scale = 1
   end
-  if extra.frame_count == nil then
-    extra.frame_count = 1
+  if extra.fc == nil then
+    extra.fc = 3
   end
-  if extra.variation_count == nil then
-    extra.variation_count = 1
+  if extra.vc == nil then
+    extra.vc = 3
   end
   if extra.order == nil then
     extra.order = "a-b-a"
@@ -233,44 +234,159 @@ for name, extra in pairs(resources_table) do
   {
     type = "item",
     name = name,
-    icon = "__EternalIndustry__/graphics/resource/" .. name .. ".png",
+    icon = "__EternalIndustry__/graphics/resource/not-shade/" .. name .. ".png",
     icon_size = 128,
     stack_size = 200
   }
-
+  local stages
   local anim
-  if extra.frame_count == 1 and extra.variation_count == 1 then
-    anim =
-    {
-      filename = "__EternalIndustry__/graphics/resource/shade/" .. name .. ".png",
-      priority = "extra-high",
-      width = 128,
-      height = 128,
-      frame_count = extra.frame_count,
-      variation_count = extra.variation_count,
-      scale = 0.35,
-    }
-  else
+  if extra.sheet == "iron" then
+    extra.stages = { 10000, 5000, 1000, 500, 250, 80, 10, 1 }
     anim =
     {
       sheet = {
-        filename = "__EternalIndustry__/graphics/resource/shade/" .. name .. ".png",
+        filename = "__base__/graphics/entity/iron-ore/hr-iron-ore.png",
         priority = "extra-high",
         width = 128,
         height = 128,
-        frame_count = extra.frame_count,
-        variation_count = extra.variation_count,
+        frame_count = 8,
+        variation_count = 8,
         scale = 0.35,
+        tint = extra.color
+      }
+    }
+  elseif extra.sheet == "copper" then
+    extra.stages = { 10000, 5000, 1000, 500, 250, 80, 10, 1 }
+    anim =
+    {
+      sheet = {
+        filename = "__base__/graphics/entity/copper-ore/hr-copper-ore.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        frame_count = 8,
+        variation_count = 8,
+        scale = 0.35,
+        tint = extra.color
+      }
+    }
+  elseif extra.sheet == "stone" then
+    extra.stages = { 10000, 5000, 1000, 500, 250, 80, 10, 1 }
+    anim =
+    {
+      sheet = {
+        filename = "__base__/graphics/entity/stone/hr-stone.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        frame_count = 8,
+        variation_count = 8,
+        scale = 0.35,
+        tint = extra.color
+      }
+    }
+  elseif extra.sheet == "coal" then
+    extra.stages = { 10000, 5000, 1000, 500, 250, 80, 10, 1 }
+    anim =
+    {
+      sheet = {
+        filename = "__base__/graphics/entity/coal/hr-coal.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        frame_count = 8,
+        variation_count = 8,
+        scale = 0.35,
+        tint = extra.color
+      }
+    }
+  else
+    extra.stages = { 2000, 500, 10 }
+    anim =
+    {
+      sheet = {
+        filename = "__EternalIndustry__/graphics/resource/ore-shade.png",
+        priority = "extra-high",
+        width = 64,
+        height = 64,
+        frame_count = extra.fc,
+        variation_count = extra.vc,
+        scale = 0.5,
+        tint = extra.color
       }
     }
   end
 
   if extra.type == "solid" then
+    particle_params =
+    {
+      type = "optimized-particle",
+      name = name .. "-ore-particle",
+      flags = { "not-on-map" },
+      life_time = 180,
+      pictures = {
+        {
+          filename = "__EternalIndustry__/graphics/particles/ore-particle1.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          animation_speed = 0.5,
+          scale = 0.25,
+          tint = extra.color,
+          1
+        },
+        {
+          filename = "__EternalIndustry__/graphics/particles/ore-particle2.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          animation_speed = 0.5,
+          scale = 0.25,
+          tint = extra.color,
+          1
+        },
+        {
+          filename = "__EternalIndustry__/graphics/particles/ore-particle3.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          animation_speed = 0.5,
+          scale = 0.25,
+          tint = extra.color,
+          1
+        },
+        {
+          filename = "__EternalIndustry__/graphics/particles/ore-particle4.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          animation_speed = 0.5,
+          scale = 0.25,
+          tint = extra.color,
+          1
+        },
+        {
+          filename = "__EternalIndustry__/graphics/particles/ore-particle5.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          animation_speed = 0.5,
+          scale = 0.25,
+          tint = extra.color,
+          1
+        },
+      }
+    }
     resource_add =
     {
       type = "resource",
       name = name,
-      icon = "__EternalIndustry__/graphics/resource/" .. name .. ".png",
+      icon = "__EternalIndustry__/graphics/resource/not-shade/" .. name .. ".png",
       icon_size = 128,
       flags = { "placeable-neutral" },
       order = extra.order,
@@ -280,13 +396,13 @@ for name, extra in pairs(resources_table) do
         hardness = 1,
         mining_time = 1,
         result = name,
-        mining_particle = "stone-particle",
+        mining_particle = name .. "-ore-particle",
         angle = 0.6,
         scale = 0.5,
       },
       collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
       selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-      stage_counts = { 1 },
+      stage_counts = extra.stages,
       stages = anim
     }
   end
@@ -296,7 +412,7 @@ for name, extra in pairs(resources_table) do
     resource_autoplace.initialize_patch_set(name, false) --no starting area placement set
   end
 
-  data:extend({ autoplace, item, resource_add })
+  data:extend({ autoplace, item, resource_add, particle_params })
 
   data.raw.resource[name].autoplace = ras(arg)
 end

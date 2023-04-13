@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.8
+Date: 13.04.2023
+  Changes:
+    - A modpack helper has been added as a dependency.
+  Graphics:
+    - Changed textures for ore on the ground.
+    - Added particles to ore mining.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 11.04.2023
   Locale:
