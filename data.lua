@@ -5,6 +5,8 @@ require('prototypes.fluids.extend.liquid-substances')
 
 require('prototypes.types.new-fuel-category')
 require('prototypes.types.new-recipe-category')
+require('prototypes.types.order.groups')
+require('prototypes.types.order.subgroups')
 
 require('prototypes.items.extend.train-accumulator')
 require('prototypes.items.extend.electric-locomotives')
@@ -18,7 +20,8 @@ require('prototypes.technology.extend.electric-locomotives')
 
 --require('prototypes.resources.test')
 require('prototypes.resources.resources')
-require('prototypes.items.extend.raw-resources')
+--require('prototypes.items.extend.raw-resources')
+require('prototypes.items.extend.crushed-ores')
 
 -- UPDATE 07.10.2021
 -- local a = 1
