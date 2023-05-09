@@ -52,9 +52,6 @@ Crushed_ore = {
   ["halite"] = {},
   ["silvin"] = {},
   ["calcite"] = {},
-  ["peat"] = {},
-  ["bitumen_sand"] = {},
-  ["natural_gas"] = {},
   ["cinnabar"] = {},
 }
 

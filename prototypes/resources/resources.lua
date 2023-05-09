@@ -5,6 +5,7 @@ Resources_table = {
   -- Iron ores:
   ["limonite"] = { style = "normal", color = co("#0ad952") },
   ["goethite"] = { base_density = 120, color = co("#ada14a") },
+  ["raw-iron-ore"] = { color = co("#ada14a") },
   -- Copper ores:
   ["chalcopyrite"] = { color = co("#ffe800") },
   ["malachite"] = { color = co("#0ad952") },
@@ -320,7 +321,6 @@ for name, extra in pairs(Resources_table) do
     {
       type = "resource",
       name = name,
-      localised_name = { "item-name." .. name },
       icon = "__EternalIndustry__/graphics/resource/not-shade/" .. name .. ".png",
       icon_size = 128,
       flags = { "placeable-neutral" },
