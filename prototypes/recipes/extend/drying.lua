@@ -35,7 +35,6 @@ data:extend({
     },
     group = "ores",
     subgroup = "i[iron]",
-    order = "a[drying]",
-    localised_name = { "", { "prefixes.drying" }, " ", { "suffix.iron2" }, " ", { "suffix.ores"} },
+    order = "a-b[drying]",
   }
 })

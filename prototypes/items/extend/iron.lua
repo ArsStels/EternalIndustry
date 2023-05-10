@@ -157,7 +157,7 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]-b[limonite]",
-    order = "a",
+    order = "a-a",
   },
   {
     -----------------------
@@ -170,7 +170,7 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]-b[siderite]",
-    order = "a",
+    order = "a-a",
   },
   {
     -----------------------
@@ -183,7 +183,7 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]-b[hematite]",
-    order = "a",
+    order = "a-a",
   },
   {
     -----------------------
@@ -196,6 +196,34 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]-b[magnetite]",
-    order = "a",
+    order = "a-a",
   },
+  {
+    -----------------------
+    -- CRUSHING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "crushing-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-b[crushing]",
+  },
+  {
+    -----------------------
+    -- RUMBLING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "rumbling-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  }
 })

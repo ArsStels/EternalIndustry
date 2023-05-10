@@ -33,7 +33,6 @@ data: extend({
     },
     group = "ores",
     subgroup = "i[iron]",
-    order = "s[sorting]",
-    localised_name = { "", { "prefixes.sorting" }, " ", { "suffix.iron" }, " ", { "suffix.ores" } },
+    order = "a-c[sorting]",
   },
 })
