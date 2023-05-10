@@ -12,6 +12,8 @@ require('prototypes.items.extend.train-accumulator')
 require('prototypes.items.extend.electric-locomotives')
 require('prototypes.items.extend.accumulator-recharger')
 require('prototypes.items.extend.iron')
+require('prototypes.items.extend.stone')
+require('prototypes.items.extend.crushed-ores')
 
 require('prototypes.entity.extend.electric-locomotives')
 require('prototypes.entity.extend.accumulator-recharger')
@@ -21,7 +23,6 @@ require('prototypes.technology.extend.electric-locomotives')
 --require('prototypes.resources.test')
 require('prototypes.resources.resources')
 --require('prototypes.items.extend.raw-resources')
-require('prototypes.items.extend.crushed-ores')
 
 -- UPDATE 07.10.2021
 -- local a = 1

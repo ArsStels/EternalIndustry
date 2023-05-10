@@ -70,7 +70,8 @@ data:extend({
       ingredients = { { "poor-iron-ore", 10 } },
       results = {
         { type = "item", name = "medium-iron-ore", amount = 8 },
-        { type = "item", name = "stone", amount = 2 }
+        { type = "item", name = "stone", amount = 2 },
+        { type = "item", name = "stone-dust", amount = 25 },
       },
       enabled = true,
       allow_decomposition = false,
@@ -81,6 +82,7 @@ data:extend({
       results = {
         { type = "item", name = "medium-iron-ore", amount = 14 },
         { type = "item", name = "stone", amount = 6 },
+        { type = "item", name = "stone-dust", amount = 65 },
       },
       enabled = true,
       allow_decomposition = false,
