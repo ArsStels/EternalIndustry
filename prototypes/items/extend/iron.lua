@@ -24,7 +24,7 @@ data:extend({
     group = "ores",
     subgroup = "i[iron]",
     order = "d[drying]",
-    localised_name = { "", { "prefixes.drying" }, " ", { "item-name." .. "drying-iron" }, " ", { "prefixes.ore" } },
+    localised_name = { "", { "prefixes.drying" }, " ", { "suffix.iron" }, " ", { "suffix.ore" } },
   },
   {
     -----------------------
@@ -45,8 +45,7 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]",
-    order = "s[separation]-a",
-    localised_name = { "", { "item-name." .. "poor-iron-ore" } },
+    order = "c[separation]-a",
   },
   {
     -----------------------
@@ -73,8 +72,7 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]",
-    order = "s[separation]-b",
-    localised_name = { "", { "item-name." .. "medium-iron-ore" } },
+    order = "c[separation]-b",
   },
   {
     -----------------------
@@ -107,8 +105,7 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]",
-    order = "s[separation]-c",
-    localised_name = { "", { "item-name." .. "rich-iron-ore" } },
+    order = "c[separation]-c",
   },
   {
     -----------------------
@@ -147,7 +144,58 @@ data:extend({
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]",
-    order = "s[separation]-d",
-    localised_name = { "", { "item-name." .. "enriched-iron-ore" } },
+    order = "c[separation]-d",
+  },
+  {
+    -----------------------
+    -- LIMONITE -----------
+    -----------------------
+    type = "item",
+    name = "limonite",
+    icon = "__EternalIndustry__/graphics/items/limonite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[limonite]",
+    order = "a",
+  },
+  {
+    -----------------------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a",
+  },
+  {
+    -----------------------
+    -- HEMATITE -----------
+    -----------------------
+    type = "item",
+    name = "hematite",
+    icon = "__EternalIndustry__/graphics/items/hematite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[hematite]",
+    order = "a",
+  },
+  {
+    -----------------------
+    -- MAGNETITE ----------
+    -----------------------
+    type = "item",
+    name = "magnetite",
+    icon = "__EternalIndustry__/graphics/items/magnetite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[magnetite]",
+    order = "a",
   },
 })

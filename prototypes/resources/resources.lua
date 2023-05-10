@@ -3,8 +3,8 @@ local co = util.color
 
 Resources_table = {
   -- Iron ores:
-  ["limonite"] = { style = "normal", color = co("#0ad952") },
-  ["goethite"] = { base_density = 120, color = co("#ada14a") },
+  -- ["limonite"] = { style = "normal", color = co("#0ad952") },
+  -- ["goethite"] = { base_density = 120, color = co("#ada14a") },
   ["raw-iron-ore"] = { color = co("#ada14a") },
   -- Copper ores:
   ["chalcopyrite"] = { color = co("#ffe800") },

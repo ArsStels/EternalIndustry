@@ -1,5 +1,8 @@
 data:extend({
   {
+    -----------------------
+    -- IRON ---------------
+    -----------------------
     type = "recipe",
     name = "drying-iron",
     icons = {
@@ -33,5 +36,6 @@ data:extend({
     group = "ores",
     subgroup = "i[iron]",
     order = "a[drying]",
+    localised_name = { "", { "prefixes.drying" }, " ", { "suffix.iron2" }, " ", { "suffix.ores"} },
   }
 })

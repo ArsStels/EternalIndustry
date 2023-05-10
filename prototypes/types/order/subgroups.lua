@@ -1,25 +1,19 @@
-data:extend({
+Subgroups = {
+  ["a"] = { "substances" },
+  ["s[stone]"] = { "ores" },
+  ["i[iron]"] = { "ores" },
+  ["i[iron]-b[limonite]"] = { "ores" },
+  ["i[iron]-b[siderite]"] = { "ores" },
+  ["i[iron]-b[hematite]"] = { "ores" },
+  ["i[iron]-b[magnetite]"] = { "ores" },
+}
+
+for name, group in pairs(Subgroups) do
+  local subgroup =
   {
     type = "item-subgroup",
-    name = "a",
-    group = "substances",
-  },
-  {
-    type = "item-subgroup",
-    name = "i[iron]",
-    group = "ores",
-  },
-  {
-    type = "item-subgroup",
-    name = "s[stone]",
-    group = "ores",
+    name = name,
+    group = group
   }
-})
--- for name, _ in pairs(Solid_substances) do
---   local subgroup = {
---     type = "item-subgroup",
---     name = name,
---     group = "substances"
---   }
---   data:extend({ subgroup })
--- end
+  data:extend({ subgroup })
+end
