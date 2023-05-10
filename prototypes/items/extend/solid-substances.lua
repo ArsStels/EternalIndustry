@@ -116,7 +116,7 @@ for name, extra in pairs(Solid_substances) do
     icon_size = extra.is,
     stack_size = extra.sz,
     group = "substances",
-    subgroup = "a",
+    subgroup = "a-a-a",
     order = "a[" .. name .. "]",
   }
   data:extend({ item })

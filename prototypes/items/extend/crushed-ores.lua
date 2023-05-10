@@ -1,6 +1,4 @@
 Crushed_ore = {
-  ["limonite"] = {},
-  ["goethite"] = {},
   ["chalcopyrite"] = {},
   ["malachite"] = {},
   ["carnotite"] = {},
@@ -55,7 +53,7 @@ Crushed_ore = {
   ["cinnabar"] = {},
 }
 
-for name, _ in pairs(Resources_table) do
+for name, _ in pairs(Crushed_ore) do
   local subgroup = {
     type = "item-subgroup",
     name = name,

@@ -1,11 +1,11 @@
 Subgroups = {
-  ["a"] = { "substances" },
-  ["s[stone]"] = { "ores" },
-  ["i[iron]"] = { "ores" },
-  ["i[iron]-b[limonite]"] = { "ores" },
-  ["i[iron]-b[siderite]"] = { "ores" },
-  ["i[iron]-b[hematite]"] = { "ores" },
-  ["i[iron]-b[magnetite]"] = { "ores" },
+  ["a-a-a"] = { group = "substances" },
+  ["s[stone]"] = { group = "ores" },
+  ["i[iron]"] = { group = "ores" },
+  ["i[iron]-b[limonite]"] = { group = "ores" },
+  ["i[iron]-b[siderite]"] = { group = "ores" },
+  ["i[iron]-b[hematite]"] = { group = "ores" },
+  ["i[iron]-b[magnetite]"] = { group = "ores" },
 }
 
 for name, group in pairs(Subgroups) do
@@ -13,7 +13,7 @@ for name, group in pairs(Subgroups) do
   {
     type = "item-subgroup",
     name = name,
-    group = group
+    group = Subgroups[name].group
   }
   data:extend({ subgroup })
 end
