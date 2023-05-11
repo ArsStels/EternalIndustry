@@ -1,0 +1,39 @@
+{
+  "factorio.versions": [
+    {
+      "name": "Steam",
+      "factorioPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\bin\\x64\\factorio.exe",
+      "active": true
+    }
+  ],
+  "Lua.workspace.library": [
+    "c:\\Program Files (x86)\\Steam\\steamapps\\common\\Factorio\\data",
+    "c:/Users/ArsStels/AppData/Roaming/Code/User/workspaceStorage/6cee80365b3edef9389f7481b721cbc3/justarandomgeek.factoriomod-debug/sumneko-3rd/factorio/library"
+  ],
+  "Lua.workspace.userThirdParty": [
+    "c:\\Users\\ArsStels\\AppData\\Roaming\\Code\\User\\workspaceStorage\\6cee80365b3edef9389f7481b721cbc3\\justarandomgeek.factoriomod-debug\\sumneko-3rd"
+  ],
+  "Lua.runtime.builtin": {
+    "io": "disable",
+    "os": "disable",
+    "math": "disable",
+    "debug": "disable",
+    "coroutine": "disable",
+    "package": "disable"
+  },
+  "Lua.runtime.version": "Lua 5.2",
+  "Lua.diagnostics.globals": [
+    "data",
+    "util",
+    "defines",
+    "script",
+    "game",
+    "util.merge",
+    "log",
+    "__Profiler"
+  ],
+  "Lua.runtime.special": {
+    "__object_name": "type"
+  },
+  "Lua.runtime.plugin": "c:/Users/ArsStels/AppData/Roaming/Code/User/workspaceStorage/6cee80365b3edef9389f7481b721cbc3/justarandomgeek.factoriomod-debug/sumneko-3rd/factorio/plugin.lua"
+}
