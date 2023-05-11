@@ -30,6 +30,7 @@
     "game",
     "util.merge",
     "log",
+    "ei",
     "__Profiler"
   ],
   "Lua.runtime.special": {
