@@ -1,4 +1,4 @@
-data.raw["item"]["iron-plate"].icon = "__EternalIndustry__/graphics/items/iron-plate.png"
+data.raw["item"]["iron-plate"].icon = "__EternalIndustry__/graphics/items/clean-metal/iron-plate.png"
 data.raw["item"]["iron-plate"].icon_size = 128
 
 data:extend({
@@ -152,7 +152,7 @@ data:extend({
     -----------------------
     type = "item",
     name = "limonite",
-    icon = "__EternalIndustry__/graphics/items/limonite.png",
+    icon = "__EternalIndustry__/graphics/items/ores/limonite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
@@ -165,7 +165,7 @@ data:extend({
     -----------------------
     type = "item",
     name = "siderite",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon = "__EternalIndustry__/graphics/items/ores/siderite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
@@ -178,7 +178,7 @@ data:extend({
     -----------------------
     type = "item",
     name = "hematite",
-    icon = "__EternalIndustry__/graphics/items/hematite.png",
+    icon = "__EternalIndustry__/graphics/items/ores/hematite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
@@ -191,7 +191,7 @@ data:extend({
     -----------------------
     type = "item",
     name = "magnetite",
-    icon = "__EternalIndustry__/graphics/items/magnetite.png",
+    icon = "__EternalIndustry__/graphics/items/ores/magnetite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
@@ -205,7 +205,7 @@ data:extend({
     -----------------------
     type = "item",
     name = "crushing-siderite",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon = "__EternalIndustry__/graphics/items/ores/siderite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
@@ -219,7 +219,7 @@ data:extend({
     -----------------------
     type = "item",
     name = "rumbling-siderite",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon = "__EternalIndustry__/graphics/items/ores/siderite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
