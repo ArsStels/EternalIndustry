@@ -17,4 +17,4 @@ data:extend({
 })
 end
 
-CNLE("ei-H-f", "__EternalIndustry__/graphics/items/clean-metal/iron-plate.png", "1KJ", 128)
+CNLE("ei-H-f", "__EternalIndustry__/graphics/items/iron-plate.png", "1KJ", 128)

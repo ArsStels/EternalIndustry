@@ -10,7 +10,7 @@ for name, extra in pairs(Raw_resources) do
     extra.is = 64
   end
   if extra.icon == nil then
-    extra.icon = "__EternalIndustry__/graphics/items/clean-metal/iron-plate.png"
+    extra.icon = "__EternalIndustry__/graphics/items/iron-plate.png"
   else
     extra.icon = "__EternalIndustry__/graphics/resource/raw-resources/" .. name .. ".png"
   end

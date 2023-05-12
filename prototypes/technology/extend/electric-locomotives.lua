@@ -39,6 +39,7 @@ data:extend({
     order = "c-g-c",
   },
 
+  
   {
     type = "technology",
     name = "electric-locomotive-2",

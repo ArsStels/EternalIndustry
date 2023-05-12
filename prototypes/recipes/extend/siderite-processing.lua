@@ -5,7 +5,7 @@ data: extend({
     -----------------------
     type = "recipe",
     name = "crushing-siderite",
-    icon = "__EternalIndustry__/graphics/items/ores/siderite.png",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     category = "smelting",
     normal = {
@@ -27,7 +27,7 @@ data: extend({
     -----------------------
     type = "recipe",
     name = "rumbling-siderite",
-    icon = "__EternalIndustry__/graphics/items/ores/siderite.png",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     category = "smelting",
     normal = {

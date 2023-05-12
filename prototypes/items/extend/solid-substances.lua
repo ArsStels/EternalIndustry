@@ -99,7 +99,7 @@ local Solid_substances = {
 -- end
 for name, extra in pairs(Solid_substances) do
   if extra.icon == nil then
-    extra.icon = "__EternalIndustry__/graphics/items/ores/raw-iron.png"
+    extra.icon = "__EternalIndustry__/graphics/items/raw-iron.png"
   end
   if extra.is == nil then
     extra.is = 128
