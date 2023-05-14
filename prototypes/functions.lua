@@ -160,6 +160,7 @@ function ei.createNewResource(name, resultname, required_fluid, fluid_amount, mi
         order = order_item
       },
     })
+  log("ei.createNewResource "..name.." with ".. resultname.." created")
 end
 
 --function ei.addRecipe(recipe_name_new, recipe_name, recipe_icon, localised_recipe_name, recipe_enabled, recipe_category, recipe_ingredients, recipe_products, recipe_hidden, recipe_hidden_from_player_crafting, recipe_order, recipe_group, recipe_subgroup)
@@ -180,3 +181,60 @@ end
 --      new_recipe
 --    })
 --end
+function ei.newItem(item_name, item_icons, item_stack, item_group, item_subgroup, item_order)
+  ei.newSubgroup(item_subgroup, item_group)
+  
+  local item_icon_size = getIconSize(item_icons)
+  local item = {
+    type = "item",
+    name = item_name,
+    icons = item_icons,
+    icon_size = item_icon_size,
+    stack_size = item_stack,
+    group = item_group,
+    subgroup = item_subgroup,
+    order = item_order,
+  }
+  log("ei.newItem "..item_name.." created")
+end
+
+function ei.getIconSize(icon)
+  local size = 32 -- по умолчанию размер 32х32
+  if type(icon) == "table" and type(icon[1]) == "table" and type(icon[1].icon) == "string" then
+    -- если передана таблица изображений, пытаемся определить размер первого изображения
+    local path = icon[1].icon
+    local w, h = gfx.get_png_size(path)
+    if w ~= nil and h ~= nil then
+      size = math.min(w, h) -- выбираем минимальный размер сто роны, чтобы изображение влезло в квадратную иконку
+    end
+  elseif type(icon) == "string" then
+    -- если передана строка с путем к изображению, пытаемся определить его размер
+    local w, h = gfx.get_png_size(icon)
+    if w ~= nil and h ~= nil then
+      size = math.min(w, h)
+    end
+  end
+  return size
+end
+
+function ei.newSubgroup(item_subgroup, item_group)
+  data:extend({
+    type = "subgroup",
+    name = item_subgroup,
+    group = item_group,
+  })
+  log("ei.newSubgroup "..item_subgroup.." and ".. item_group.." created")
+end
+
+function ei.getTableLenght()
+  local tbl = item_icons
+  if type(tbl[1]) == "table" then
+    if #tbl == 1 then
+        icons = item_icons
+        icon_size = item_icon_size
+      else if #tbl > 0 then
+        a = b + c + d
+      end
+    end
+  else tbl = nil end
+end
