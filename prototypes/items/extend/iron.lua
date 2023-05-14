@@ -200,17 +200,129 @@ data:extend({
   },
   {
     -----------------------
-    -- CRUSHING -----------
+    -- BIG ----------------
     -- SIDERITE -----------
     -----------------------
     type = "item",
-    name = "crushing-siderite",
+    name = "big-siderite",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
     group = "ores",
     subgroup = "i[iron]-b[siderite]",
-    order = "a-b[crushing]",
+    order = "a-a-a",
+  },
+  {
+    -----------------------
+    -- MEDIUM -------------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "medium-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-a-b",
+  },
+  {
+    -----------------------
+    -- SMALL --------------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "small-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-a-c",
+  },
+  {
+    -----------------------
+    -- PULP ---------------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "pulp-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-b",
+  },
+  {
+    -----------------------
+    -- RUMBLING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "rumbling-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- RUMBLING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "rumbling-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- RUMBLING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "rumbling-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- RUMBLING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "rumbling-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- RUMBLING -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "rumbling-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
   },
   {
     -----------------------

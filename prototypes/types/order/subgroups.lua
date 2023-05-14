@@ -8,12 +8,12 @@ Subgroups = {
   ["i[iron]-b[magnetite]"] = { group = "ores" },
 }
 
-for name, group in pairs(Subgroups) do
+for name, extra in pairs(Subgroups) do
   local subgroup =
   {
     type = "item-subgroup",
     name = name,
-    group = Subgroups[name].group
+    group = extra.group,
   }
   data:extend({ subgroup })
 end
