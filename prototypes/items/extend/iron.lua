@@ -242,39 +242,11 @@ data:extend({
   },
   {
     -----------------------
-    -- IRON 2 OXIDE--------
-    -- IMPURITIES ---------
-    -----------------------
-    type = "item",
-    name = "iron-2-oxide-impurities",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
-    icon_size = 128,
-    stack_size = 200,
-    group = "ores",
-    subgroup = "i[iron]-b[siderite]",
-    order = "a-c[rumbling]",
-  },
-  {
-    -----------------------
-    -- IRON 3 OXIDE -------
-    -- IMPURITIES ---------
-    -----------------------
-    type = "item",
-    name = "iron-3-oxide-impurities",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
-    icon_size = 128,
-    stack_size = 200,
-    group = "ores",
-    subgroup = "i[iron]-b[siderite]",
-    order = "a-c[rumbling]",
-  },
-  {
-    -----------------------
     -- DIRTY IRON----------
     -- CONCENTRATE --------
     -----------------------
     type = "item",
-    name = "dirty-iron-concentration",
+    name = "dirty-iron-concentrate",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -288,7 +260,7 @@ data:extend({
     -- CONCENTRATE --------
     -----------------------
     type = "item",
-    name = "wet-iron-concentration",
+    name = "wet-iron-concentrate",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -302,6 +274,48 @@ data:extend({
     -----------------------
     type = "item",
     name = "iron-concentrate",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- LOW RICH -----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "low-rich-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- MEDIUM RICH --------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "medium-rich-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    stack_size = 200,
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-c[rumbling]",
+  },
+  {
+    -----------------------
+    -- HIGH RICH ----------
+    -- SIDERITE -----------
+    -----------------------
+    type = "item",
+    name = "high-rich-siderite",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,

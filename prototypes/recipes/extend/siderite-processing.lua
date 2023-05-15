@@ -10,6 +10,30 @@ data: extend({
     category = "advanced-crafting",
     normal = {
       energy_required = 30,
+      ingredients = { { "siderite", 20 } },
+      results = {
+        { type = "item", name = "big-siderite", amount = 5 },
+        { type = "item", name = "medium-siderite", amount = 5 },
+        { type = "item", name = "small-siderite", amount = 5 },
+      },
+      enabled = true,
+      allow_decomposition = false,
+    },
+    group = "ores",
+    subgroup = "i[iron]-b[siderite]",
+    order = "a-a[rumbling]",
+  },
+  {
+    -----------------------
+    -- GRINDING -----------
+    -----------------------
+    type = "recipe",
+    name = "grinding-siderite",
+    icon = "__EternalIndustry__/graphics/items/siderite.png",
+    icon_size = 128,
+    category = "advanced-crafting",
+    normal = {
+      energy_required = 30,
       ingredients = { { "medium-siderite", 20 } },
       results = {
         { type = "item", name = "small-siderite", amount = 5 },
@@ -19,7 +43,7 @@ data: extend({
     },
     group = "ores",
     subgroup = "i[iron]-b[siderite]",
-    order = "a-a[rumbling]",
+    order = "a-a[grinding]",
   },
   {
     -----------------------
@@ -148,13 +172,13 @@ data: extend({
       energy_required = 30,
       ingredients = {
         { type = "fluid", name = "pulp-siderite", amount = 20 },
-        { type = "fluid", name = "oxygen", amount = 120 },
+        --{ type = "fluid", name = "oxygen", amount = 120 },
       },
       results = {
         { type = "fluid", name = "iron-2-oxide-impurities", amount = 7 },
         { type = "fluid", name = "water", amount = 20 },
-        { type = "item", name = "silica", amount = 5 },
-        { type = "fluid", name = "carbon-dioxide", amount = 40 },
+        --{ type = "item", name = "silica", amount = 5 },
+        --{ type = "fluid", name = "carbon-dioxide", amount = 40 },
       },
       enabled = true,
       allow_decomposition = false,
@@ -176,7 +200,7 @@ data: extend({
       energy_required = 30,
       ingredients = {
         { type = "fluid", name = "iron-2-oxide-impurities", amount = 20 },
-        { type = "fluid", name = "hydrochloric-acid", amount = 30 },
+        --{ type = "fluid", name = "hydrochloric-acid", amount = 30 },
       },
       results = {
         { type = "fluid", name = "iron-3-oxide-impurities", amount = 10 },
@@ -202,10 +226,10 @@ data: extend({
       energy_required = 30,
       ingredients = {
         { type = "fluid", name = "iron-3-oxide-impurities", amount = 20 },
-        { type = "fluid", name = "nitric-acid", amount = 30 },
+        --{ type = "fluid", name = "nitric-acid", amount = 30 },
       },
       results = {
-        { type = "item", name = "dirty-iron-concentration", amount = 10 },
+        { type = "item", name = "dirty-iron-concentrate", amount = 10 },
       },
       enabled = true,
       allow_decomposition = false,
