@@ -242,25 +242,11 @@ data:extend({
   },
   {
     -----------------------
-    -- PULP ---------------
-    -- SIDERITE -----------
+    -- IRON 2 OXIDE--------
+    -- IMPURITIES ---------
     -----------------------
     type = "item",
-    name = "pulp-siderite",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
-    icon_size = 128,
-    stack_size = 200,
-    group = "ores",
-    subgroup = "i[iron]-b[siderite]",
-    order = "a-b",
-  },
-  {
-    -----------------------
-    -- RUMBLING -----------
-    -- SIDERITE -----------
-    -----------------------
-    type = "item",
-    name = "rumbling-siderite",
+    name = "iron-2-oxide-impurities",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -270,11 +256,11 @@ data:extend({
   },
   {
     -----------------------
-    -- RUMBLING -----------
-    -- SIDERITE -----------
+    -- IRON 3 OXIDE -------
+    -- IMPURITIES ---------
     -----------------------
     type = "item",
-    name = "rumbling-siderite",
+    name = "iron-3-oxide-impurities",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -284,11 +270,11 @@ data:extend({
   },
   {
     -----------------------
-    -- RUMBLING -----------
-    -- SIDERITE -----------
+    -- DIRTY IRON----------
+    -- CONCENTRATE --------
     -----------------------
     type = "item",
-    name = "rumbling-siderite",
+    name = "dirty-iron-concentration",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -298,11 +284,11 @@ data:extend({
   },
   {
     -----------------------
-    -- RUMBLING -----------
-    -- SIDERITE -----------
+    -- WET IRON -----------
+    -- CONCENTRATE --------
     -----------------------
     type = "item",
-    name = "rumbling-siderite",
+    name = "wet-iron-concentration",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -312,11 +298,10 @@ data:extend({
   },
   {
     -----------------------
-    -- RUMBLING -----------
-    -- SIDERITE -----------
+    -- IRON CONCENTRATE ---
     -----------------------
     type = "item",
-    name = "rumbling-siderite",
+    name = "iron-concentrate",
     icon = "__EternalIndustry__/graphics/items/siderite.png",
     icon_size = 128,
     stack_size = 200,
@@ -324,18 +309,4 @@ data:extend({
     subgroup = "i[iron]-b[siderite]",
     order = "a-c[rumbling]",
   },
-  {
-    -----------------------
-    -- RUMBLING -----------
-    -- SIDERITE -----------
-    -----------------------
-    type = "item",
-    name = "rumbling-siderite",
-    icon = "__EternalIndustry__/graphics/items/siderite.png",
-    icon_size = 128,
-    stack_size = 200,
-    group = "ores",
-    subgroup = "i[iron]-b[siderite]",
-    order = "a-c[rumbling]",
-  }
 })
