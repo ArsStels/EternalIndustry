@@ -2,7 +2,7 @@
 data:extend({
   {
 type = "recipe",
-name = "electric-locomotive",
+name = "ei-electric-locomotive",
 icons= {
   { icon = "__base__/graphics/icons/locomotive.png", icon_size = 64, tint = { r = 0.90, g = 0.90, b = 1, a = 1 }},
   { icon = "__base__/graphics/icons/signal/signal_1.png", icon_size = 64, scale=0.25, shift= {-10, -12}},
@@ -20,7 +20,7 @@ result = "ei-electric-locomotive",
   },
   {
 type = "recipe",
-name = "electric-locomotive-2",
+name = "ei-electric-locomotive-2",
 icons= {
   { icon = "__base__/graphics/icons/locomotive.png", icon_size = 64, tint = { r = 0.80, g = 0.90, b = 1, a = 1 }},
   { icon = "__base__/graphics/icons/signal/signal_2.png", icon_size = 64, scale=0.25, shift= {-10, -12}},

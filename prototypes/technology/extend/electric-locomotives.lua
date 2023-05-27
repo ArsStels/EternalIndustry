@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "electric-locomotive",
+    name = "ei-electric-locomotive",
     icons = {
       { icon = "__base__/graphics/icons/locomotive.png", icon_size = 64, tint = { r = 0.90, g = 0.90, b = 1, a = 1 }},
       { icon = "__EternalIndustry__/graphics/icons/high_voltage.png", icon_size = 128, scale=0.25, shift= {-20, -17}},
@@ -29,7 +29,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "electric-locomotive",
+        recipe = "ei-electric-locomotive",
       },
       {
         type = "unlock-recipe",
@@ -42,14 +42,14 @@ data:extend({
   
   {
     type = "technology",
-    name = "electric-locomotive-2",
+    name = "ei-electric-locomotive-2",
     icons = {
       { icon = "__base__/graphics/icons/locomotive.png", icon_size = 64, tint = { r = 0.80, g = 0.90, b = 1, a = 1 }},
       { icon = "__EternalIndustry__/graphics/icons/high_voltage.png", icon_size = 128, scale=0.25, shift= {-20, -17}},
       { icon = "__base__/graphics/icons/signal/signal_2.png", icon_size = 64, scale=0.25, shift= {16, 16}},
       },
     prerequisites = {
-      "electric-locomotive",
+      "ei-electric-locomotive",
       "electric-energy-distribution-2",
       "low-density-structure",
     },
@@ -65,7 +65,7 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "electric-locomotive-2",
+        recipe = "ei-electric-locomotive-2",
       },
       {
         type = "unlock-recipe",
