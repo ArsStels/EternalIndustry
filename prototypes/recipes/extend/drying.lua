@@ -1,13 +1,13 @@
 data:extend({
   {
     -----------------------
-    -- IRON ---------------
+    -- METAL 1 ------------
     -----------------------
     type = "recipe",
-    name = "drying-iron",
+    name = "drying-metal-1",
     icons = {
       {
-        icon = "__EternalIndustry__/graphics/resource/not-shade/raw-iron-ore.png",
+        icon = "__EternalIndustry__/graphics/resource/not-shade/raw-metal-1-ore.png",
         icon_size = 128,
       },
       {
@@ -22,14 +22,14 @@ data:extend({
     normal = {
       energy_required = 60,
       ingredients = { { "raw-iron-ore", 40 } },
-      results = { { type = "item", name = "drying-iron", amount = 40 } },
+      results = { { type = "item", name = "drying-metal-1", amount = 40 } },
       enabled = true,
       allow_decomposition = false,
     },
     expensive = {
       energy_required = 90,
       ingredients = { { "raw-iron-ore", 30 } },
-      results = { { type = "item", name = "drying-iron", amount = 30 } },
+      results = { { type = "item", name = "drying-metal-1", amount = 30 } },
       enabled = true,
       allow_decomposition = false,
     },
